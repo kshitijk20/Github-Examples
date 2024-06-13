@@ -14,3 +14,4 @@ jobs:
 
       - name: Print event type
         run: echo "Event of type: ${{ github.event.action }}"
+
