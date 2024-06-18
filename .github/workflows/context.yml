@@ -10,6 +10,8 @@ jobs:
               env: 
                 MY_ACTION: ${{github.action}}
                 MY_ACTOR: ${{github.actor}}
+                MY_REF: ${{github.action_ref}}
               run:
                 echo "Hello! $MY_ACTOR"
+                echo "Hello! $MY_REF"
              
