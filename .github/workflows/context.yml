@@ -7,11 +7,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Step-1"
-              env: 
+              env:  
                 MY_ACTION: ${{github.action}}
                 MY_ACTOR: ${{github.action_status}}
                 MY_REPO: ${{github.action_repository}}
+                API_KEY: ${{secrets.API_KEY}}
               run: |
-                echo "Hello! $MY_ACTOR" \n
+                echo "Hello! $MY_ACTOR" 
                 echo "Hello! $MY_REPO"
+                echo "Hello! $API_KEY"
              
