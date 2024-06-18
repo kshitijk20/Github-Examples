@@ -9,7 +9,7 @@ jobs:
             - name: "Step-1"
               env: 
                 MY_ACTION: ${{github.action}}
-                MY_ACTOR: ${{github.actor}}
+                MY_ACTOR: ${{github.action_status}}
                 MY_REPO: ${{github.action_repository}}
               run: |
                 echo "Hello! $MY_ACTOR" \n
